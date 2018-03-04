@@ -23,7 +23,8 @@ void updateMissile()
         lesMissiles[i].timerAlive = 0;
       }
       else if(gb.collidePointRect(lesMissiles[i].x,lesMissiles[i].y,player.x+(player.offsetCam - 11),player.y,22,8))
-      {
+      { 
+        gb.lights.fill(RED);
         if(player.hp>0)
         {
           player.hp -= lesMissiles[i].damage;

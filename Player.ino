@@ -305,6 +305,7 @@ void drawMitraille(float angle,int8_t mult)
       offset = -5;
     }
     if(gb.frameCount%3==0) {
+      gb.lights.fill(YELLOW);
       gb.display.setColor(YELLOW);
       gb.display.drawLine((player.offsetCam)+offset, player.y, ((dist-1) + random(0,3)) , 46);
     }

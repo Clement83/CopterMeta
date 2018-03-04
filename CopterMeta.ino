@@ -204,6 +204,7 @@ void loop(){
 
  if(gb.update())
  {
+    gb.lights.clear();
     if(gb.buttons.pressed(BTN_C)){
       goTitleScreen();
     }
