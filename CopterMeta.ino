@@ -178,7 +178,7 @@ void initGame()
        break;
      }
    }
-   vieRestant = 2;
+   vieRestant = NB_LIFE;
    player.hp = MAX_LIFE;
   player.x=1000;
   cptVictoire= 0;

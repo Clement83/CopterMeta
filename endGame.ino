@@ -1,6 +1,7 @@
 
 void winScreen()
 {
+  gb.display.setColor(BLACK);
   uint8_t nbKill = 0;
   uint8_t nbTot = 0;
   for(byte i=0; i< NB_BAT_LVL ;i++)
